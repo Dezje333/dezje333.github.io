@@ -219,18 +219,15 @@ MAIN.gj = {
             effect: ()=>Decimal.pow(2,player.grassjump-19),
             effDesc: x=> format(x)+"x",
         },{
-            r: 100000000000000000000000000000000000000000000000000000000000000000000000,
+            r: 30,
             desc: `Unlock <b class="green">the Star</b> in the planetoid (on right of constellation).`,
-         },{
-            r: 35,
-            desc: `Unlock <b class="green">the Science Lab</b>.`,
         },{
-            r: 100000000000000000000000000000000000000000000000000000000000000000000000,
+            r: 35,
             desc: `Increase solar rays gain by <b class="green">+10%</b> compounding per grass jump, starting at 35.`,
             effect: ()=>player.hsj>=3 ? Decimal.pow(1.1,player.grassjump) : Decimal.pow(1.1,softcap(player.grassjump,75,1/3,2)-34),
             effDesc: x=>formatMult(x),
         },{
-            r: 100000000000000000000000000000000000000000000000000000000000000000000000,
+            r: 70,
             desc: `Unlock the <b class="green">Crazy Machine</b> on bottom of Grass Jump.`,
         },
     ],
