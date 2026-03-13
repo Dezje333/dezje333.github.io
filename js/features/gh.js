@@ -219,15 +219,18 @@ MAIN.gj = {
             effect: ()=>Decimal.pow(2,player.grassjump-19),
             effDesc: x=> format(x)+"x",
         },{
-            r: 30,
+            r: 100000000000000000000000000000000000000000000000000000000000000000000000,
             desc: `Unlock <b class="green">the Star</b> in the planetoid (on right of constellation).`,
-        },{
+         },{
             r: 35,
+            desc: `Unlock <b class="green">the Science Lab</b>.`,
+        },{
+            r: 100000000000000000000000000000000000000000000000000000000000000000000000,
             desc: `Increase solar rays gain by <b class="green">+10%</b> compounding per grass jump, starting at 35.`,
             effect: ()=>player.hsj>=3 ? Decimal.pow(1.1,player.grassjump) : Decimal.pow(1.1,softcap(player.grassjump,75,1/3,2)-34),
             effDesc: x=>formatMult(x),
         },{
-            r: 70,
+            r: 100000000000000000000000000000000000000000000000000000000000000000000000,
             desc: `Unlock the <b class="green">Crazy Machine</b> on bottom of Grass Jump.`,
         },
     ],
@@ -598,7 +601,7 @@ el.setup.milestones = ()=>{
 
     t.setHTML(h)
 
-    t = new Element("milestone_div_gj")
+    t = new Element("milestone_div_")
     h = ""
 
     h += `<div style="position:absolute;top:50%;width: 100%;transform:translateY(-50%);font-size:30px;" id="gj_mil_req">
