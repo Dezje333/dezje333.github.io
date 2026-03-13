@@ -168,8 +168,7 @@ function getAPEff(id) { return Decimal.pow(AP_BONUS_BASE[id],player.astralPresti
 UPGS.moonstone = {
     title: "Moonstone Upgrades",
 
-    autoUnl: ()=>hasUpgrade('auto',3),
-    noSpend: ()=>hasUpgrade('auto',6),
+
 
     underDesc: ()=>`You have ${format(player.moonstone,0)} Moonstone (${formatPercent(tmp.moonstoneChance)} platinum grow chance)`,
 
