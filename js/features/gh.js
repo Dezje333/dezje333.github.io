@@ -598,7 +598,7 @@ el.setup.milestones = ()=>{
 
     t.setHTML(h)
 
-    t = new Element("milestone_div_")
+    t = new Element("milestone_div_gj")
     h = ""
 
     h += `<div style="position:absolute;top:50%;width: 100%;transform:translateY(-50%);font-size:30px;" id="gj_mil_req">
