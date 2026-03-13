@@ -88,7 +88,7 @@ const MAIN = {
 
         if (!hasUpgrade('constellation',3)) x /= tmp.compact
 
-        return Math.min(Math.max(10,Math.floor(x)),4000)
+        return Math.min(Math.max(10,Math.floor(x)),5000)
     },
     grassSpwan() {
         let x = 2.5
